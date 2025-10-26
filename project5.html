@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstracte fotografie - MOMA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+       <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Abstracte fotografie - MOMA</h2>
+        <p>
+            Voor een fictieve opdracht, opgesteld door Curio, heb ik voor het restaurant van MOMA abstracte fotografie toegepast om kunstwerken te creëren die als wanddecoratie in het restaurant gebruikt kunnen worden. Het museum staat bekend om zijn moderne kunst, en dit heb ik zoveel mogelijk laten terugkomen in mijn ontwerp. Ik heb ervoor gekozen om de huisstijlkleur van MOMA over te nemen en de foto’s in zwart-wit te maken, wat een chique en licht vervreemdend effect geeft. Op de foto’s zijn bestek en servies weergegeven, zodat er een duidelijke link ontstaat met het restaurant.
+        <div class="project-gallery">
+            <img src="img/De_Schepping_van_Adam.1.jpg" alt="Poster detail 1">
+            <img src="img/Graan_van_metaal.jpg" alt="Poster detail 2">
+            <img src="img/Honey, Honey, Honey.1.jpg" alt="Poster detail 3">
+            <img src="img/Minimalistische_lepeltjes.jpg" alt="Poster detail 4">
+            <img src="img/inkt_bij_de_water_doen_2.1.Afrukklaar.jpg" alt="Poster detail 5">
+            <img src="img/Lepeltje_lepeltje.jpg" alt="Poster detail 6">
+        </div>
+    </section>
+<div class="back-button-container">
+    <a href="work.html" class="back-button">← Terug naar Mijn Werk</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

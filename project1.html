@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto van de maand - Natuurmonumenten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Natuur fotografie - Natuurmonumenten</h2>
+        <p>
+            Voor de maandelijkse fotowedstrijd van Natuurmonumenten, foto van de maand, was de opdracht om de natuur op een eigen, creatieve manier vast te leggen. In mijn werk ging ik op zoek naar een perspectief dat je als mens normaal gesproken niet ziet. Door te spelen met scherptediepte, detail en contrast, probeerde ik de kijker op een andere manier naar de natuur te laten kijken. Dichterbij, intiemer en met meer aandacht voor de kleine, vaak over het hoofd geziene momenten.
+        </p>
+        <div class="project-gallery">
+             <img src="img/Blauwe_libelle_op_blaadje.JPG" alt="Poster detail 1">
+            <img src="img/Oranje_libelle_op_takje.JPG" alt="Poster detail 2">
+        </div>
+    </section>
+<div class="back-button-container">
+    <a href="work.html" class="back-button">← Terug naar Mijn Werk</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merkidentiteit – Cult.FM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+       <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Merkidentiteit – Cult.FM</h2>
+        <p>
+            Voor de fictieve radiozender Cult.FM ontwierp ik een complete visuele identiteit. Ik begon met een onderzoek naar de doelgroep, actuele designtrends en de betekenis van kleur in relatie tot emotie en sfeer. Vanuit die inzichten ontwikkelde ik een huisstijl die past bij het eigenzinnige, creatieve karakter van het station. Het logo, kleurgebruik en de website versterken samen het gevoel van een zender die durft op te vallen en vernieuwend durft te zijn.
+        </p>
+        <div class="project-gallery">
+            <img src="img/Cult.fm_logo_uitbreiding.jpg" alt="Poster detail 1">
+            <img src="img/Cult.fm_huisstijl_uitbreiding.jpg" alt="Poster detail 2">
+            <img src="img/Cult.fm_website_uitbreiding.jpg" alt="Poster detail 3">
+        </div>
+    </section>
+<div class="back-button-container">
+    <a href="work.html" class="back-button">← Terug naar Mijn Werk</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

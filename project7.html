@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discursive Design - Kritiek op de cosmetica-industrie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+       <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Discursive Design - Kritiek op de cosmetica-industrie</h2>
+        <p>
+            Voor het vak Discursive Design ontwierp ik een provocatype: een kritisch object dat discussie oproept over de schijnbare transparantie binnen de cosmetica-industrie. Mijn onderzoek begon bij de Maybelline Super Stay 24H Powder Foundation, een product dat zich profileert als verzorgend, vegan en huidvriendelijk. Maar achter deze beloften schuilt een minder mooi verhaal: ingrediënten die de huid juist kunnen beschadigen, verhuld onder een laagje marketingtaal en keurmerken.
+        </p>
+        <p>Mijn idea worth spreading: <strong>“De echte camouflage zit niet op ons gezicht, maar in de manier waarop de industrie haar producten verkoopt.”</strong> </p>
+        <p>Om die boodschap voelbaar te maken, ontwierp ik een fysieke crème die dezelfde schade aanricht als echte make-up — maar dan zichtbaar en direct. Door middel van knolling legde ik alle ‘ingrediënten’ open op tafel: symbolische materialen zoals sigarettenas, alcohol en tandpasta, die elk een effect op de huid verbeelden. Het resultaat confronteert de toeschouwer met wat normaal verborgen blijft achter beloftes van ‘vitamine C’ en ‘vegan’.</p>
+        <p>Het ontwerp bevraagt onze vanzelfsprekende relatie met cosmetica: als we écht zouden weten wat erin zit, zouden we het dan nog steeds gebruiken?
+Met dit werk wilde ik niet alleen kritiek leveren, maar ook bewustwording oproepen — over schoonheid, marketing en de dunne grens tussen zelfzorg en zelfschade.</p>
+        <body class="project-page">
+    <div class="project-gallery">
+        <img src="img/IMG_3725_vergroot.jpg" alt="Poster detail 1">
+        <img src="img/bewerkte_producten_verpakkingen_1.1.jpg" alt="Poster detail 2">
+        <img src="img/bewerkte_gevolgen_ingredienten_1.1.jpg" alt="Poster detail 3">
+        <img src="img/IMG_4184 2.JPG" alt="Poster detail 4">
+        <img src="img/Poster_Blend&Destroy_design_4.jpg" alt="Poster detail 5">
+    </div>
+</body>
+    </section>
+<div class="back-button-container">
+    <a href="work.html" class="back-button">← Terug naar Mijn Werk</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

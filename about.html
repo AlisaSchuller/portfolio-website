@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alisa Schuller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+       <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<main></main>
+    <section id="over">
+        <h2>Over mij</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="img/Foto_alisa_vissershang.jpg" alt="Alisa Schuller">
+            </div>
+            <div class="about-text">
+                <p>Hallo! Mijn naam is <strong>Alisa A.C.F. Schuller</strong>, 21 jaar en student Communication &
+                    Multimedia Design aan Avans. Hiervoor behaalde ik al mijn mbo niveau 4-diploma in Mediavormgeving.
+                </p>
+                <p>
+                    Mijn voorliefde voor onderzoek en alles willen weten begon al op de basisschool. Spreekbeurten maken
+                    was toen al mijn favoriete onderdeel. Tijdens mijn vorige studie specialiseerde ik me vooral in
+                    illustreren, productvormgeving en grafische vormgeving. Tegenwoordig richt ik me er meer op om mijn
+                    ontwerpen sterker en betekenisvoller te maken door psychologie en onderzoek bewuster in te zetten.
+                </p>
+                <p>
+                    Anderen omschrijven mij vaak als empathisch, nieuwsgierig en leergierig, reflectief, open en
+                    eerlijk, maar ook kritisch. Eigenschappen die mij helpen om zowel mijn eigen werk te verbeteren als
+                    het verhaal van een ander goed te begrijpen en te vertalen naar een ontwerp.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="insta-carousel">
+        <h2>Instagram</h2>
+        <div class="carousel">
+            <button class="arrow left">&#10094;</button>
+            <div class="carousel-track">
+                <img src="img/instagramfoto1_Alisa_schuller_Logo_design_presentation_indesign.JPG" alt="">
+                <img src="img/instagramfoto2.JPG" alt="">
+                <img src="img/instagramfoto5_De_Schepping_van_Adam.1.JPG" alt="">
+                <img src="img/instagramfoto4_ORG_DSC03151.JPG" alt="">
+                <img src="img/instagramfoto3_MD_Challange1_Alisa-Schuller_foto1.jpg" alt="">
+            </div>
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const leftButton = document.querySelector('.arrow.left');
+        const rightButton = document.querySelector('.arrow.right');
+        let currentIndex = 2; // start in het midden
+
+        function updateCarousel() {
+            slides.forEach((img, index) => {
+                img.classList.toggle('active', index === currentIndex);
+            });
+            const offset = (currentIndex - 2) * -220; // 220 = breedte + gap
+            track.style.transform = `translateX(${offset}px)`;
+        }
+
+        leftButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel();
+        });
+
+        rightButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel();
+        });
+
+        updateCarousel();
+    </script>
+</body>
+
+</html>

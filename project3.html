@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merkidentiteit – Funky Frisdran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Merkidentiteit – Funky Frisdrank</h2>
+        <p>
+            Voor dit project ontwierp ik de identiteit van een zelfbedacht drankje rondom de kernwaarde Funky. Ik liet me inspireren door de speelse energie van de jive-dans uit de jaren ’60 en ’70, en vertaalde dat naar een visuele stijl vol warmte en beweging. Met dynamische vormen, levendige kleuren en illustraties van diverse vrouwen straalt het ontwerp kracht, plezier en zelfexpressie uit. Zo ontstond een merkbeeld dat niet alleen vrolijk en bruisend is, maar ook een gevoel van vrijheid en diversiteit viert.
+        <div class="project-gallery">
+            <img src="img/Mockup_Jive_blikje_2.1_bijgesneden.jpg" alt="Poster detail 1">
+            <img src="img/Flyer_3.jpg" alt="Poster detail 2">
+             <img src="img/Illustratie_insta-story_2.3_mockup.jpg" alt="Verticale poster of mockup">
+        </div>
+    </section>
+<div class="back-button-container">
+    <a href="work.html" class="back-button">← Terug naar Mijn Werk</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

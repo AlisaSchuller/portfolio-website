@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typografie - Graphic Matters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Typografie - Graphic Matters</h2>
+        <p>
+            Voor de Tussen Aanhalingstekens-challenge maakte ik een serie posters rondom quotes die mij persoonlijk raken, zoals “Perfection is the enemy of progress”. Voor mijn handgeschreven poster besloot ik mijn dyslexie en imperfect handschrift te omarmen, waardoor mijn beperking juist een kracht werd en het ontwerp een persoonlijke, authentieke uitstraling kreeg. Naast deze poster maakte ik nog meerdere ontwerpen, waarvan een paar ook erg sterk en waar ik erg tevreden over was. Het project leerde me dat kwetsbaarheid en imperfectie juist kunnen bijdragen aan kracht en expressie in typografie.
+        </p>
+        <div class="project-gallery">
+    <img src="img/Quote_poster_designs_Tekengebied 1 kopie 4.jpg" alt="Poster detail 1" class="large-photo">
+    <div class="small-photos">
+        <img src="img/Quote_poster_designs_Tekengebied 1 kopie 2.jpg" alt="Poster detail 2">
+        <img src="img/Quote_poster_designs_Tekengebied 1 kopie 3.jpg" alt="Poster detail 3">
+    </div>
+</div>
+    </section>
+<div class="back-button-container">
+    <a href="work.html" class="back-button">← Terug naar Mijn Werk</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

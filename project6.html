@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociale Interventie - LUMISECTA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+       <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Sociale Interventie - LUMISECTA</h2>
+        <p>
+            Voor de Van Gogh Homeland kregen wij de opdracht om een sociale interventie te ontwerpen die inwoners van Tilburg meer bewust zou maken over het thema biodiversiteit. Tilburg is namelijk een van de warmste steden van West-Europa doordat de stad bijna volledig is volgebouwd. Onze taak was om jongeren meer te betrekken bij dit onderwerp.
+        </p>
+        <p>Uit onze enquêteanalyse bleek dat woningnood een van de grootste zorgen is binnen deze groep. Dit idee vormde de kern van ons concept LUMISECTA: reusachtige, lichtgevende insectensculpturen in de stad die de parallellen tonen tussen de woningnood van jongeren en die van insecten — beiden zoeken naar leefruimte en worden vaak niet gehoord of begrepen. Door deze link te leggen, creëert LUMISECTA empathie bij de doelgroep en maakt het hen bewust van het belang van biodiversiteit op een manier die dicht bij hun eigen ervaringen ligt.
+        </p>
+        <p>Ik onderzocht hoe actueel dit thema is en verdiepte me in de rol van insecten in het ecosysteem. Daarnaast interviewde ik jongeren, waarbij ik met gerichte vragen waardevolle inzichten verzamelde én enthousiasme opwekte. Ook wist ik de opdrachtgever te overtuigen van ons concept, waardoor LUMISECTA werd geselecteerd om mogelijk verder uitgewerkt te worden voor realisatie.</p>
+        <div class="project-gallery">
+            <img src="img/interview_2_1.1.jpeg" alt="Poster detail 1">
+            <img src="img/praten_met_oprdachtgever_expo.JPG" alt="Poster detail 2">
+             <img src="img/Foto_expo_tafel_oranje_kever.JPG" alt="Poster detail 4">
+             <img src="img/Problemen_jongeren_grafiek.png" alt="Poster detail 3">
+              <img src="img/Screen_creative-rationale_onepager.png" alt="Poster detail 6">
+              <img src="img/foto_prototype_1.1.jpg" alt="Poster detail 5">
+        </div>
+    </section>
+<div class="back-button-container">
+    <a href="work.html" class="back-button">← Terug naar Mijn Werk</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

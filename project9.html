@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campagne - Plaats Delict Breda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Campagne - Plaats Delict Breda</h2>
+        <p>
+           Plaats Delict Breda is een campagne die inwoners bewust maakt van de risico’s die dieren in de stad lopen door zwerfafval en vervuiling. In plaats van afval als alledaags te tonen, wordt het in dit concept behandeld als een misdrijf tegen de natuur. Door deze confronterende, maar speelse insteek ontstaat betrokkenheid en urgentie zonder belerend te zijn.
+        </p>
+        <p>In Park Valkenberg markeren milieuvriendelijke krijtverf-silhouetten van dieren de plekken waar afval gevaarlijk is voor stadsdieren. Bij elk silhouet staat een geel “plaats-delictbordje” met een QR-code die leidt naar een website waar bezoekers dossiers kunnen bekijken over het afval, het slachtoffer en de gevolgen. Daarnaast biedt de site praktische tips over wat je zelf kunt doen en het noodnummer van de dierenambulance, zodat iedereen direct geïnformeerd en betrokken wordt.</p>
+        <p>De visuele stijl verwijst subtiel naar politie- en onderzoeksesthetiek: contrasterend geel-zwart, afgebakende vlakken en grafische markeringen. Ook het taalgebruik is doordacht: termen als “zaak”, “bewijs” en “dossier” versterken de immersie en maken het onderwerp tastbaar en herkenbaar.</p>
+        <p>Met Plaats Delict Breda hoop ik dat afval niet langer iets is dat we negeren, maar iets waarover we praten en samen bewust mee omgaan. Het project combineert storytelling, vormgeving en praktische informatie om een serieus maatschappelijk probleem op een toegankelijke en tastbare manier bespreekbaar te maken.</p>
+        <div class="project-gallery">
+            <img src="img/Blauwe_libelle_op_blaadje.JPG" alt="Poster detail 1">
+            <img src="img/Oranje_libelle_op_takje.JPG" alt="Poster detail 2">
+        </div>
+    </section>
+<div class="back-button-container">
+    <a href="work.html" class="back-button">← Terug naar Mijn Werk</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “Perfection is the enemy of progress”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

@@ -345,13 +345,23 @@ body.home .hero {
 
 body.home .hero-name {
     font-size: 5rem;
-    /* veel groter */
     font-family: 'Butler', serif;
     font-weight: 700;
     letter-spacing: 0.1em;
     margin: 0;
-    display: inline-block;
-    white-space: nowrap;
+    display: flex;          /* zorgt dat woorden naast elkaar staan */
+    flex-wrap: nowrap;      /* voorkomen dat ze automatisch onder elkaar gaan */
+    justify-content: center;
+    gap: 1rem;              /* ruimte tussen voor- en achternaam */
+}
+
+/* Voor mobiel: woorden onder elkaar */
+@media (max-width: 600px) {
+    body.home .hero-name {
+        flex-direction: column; /* onder elkaar */
+        font-size: 3rem;
+        line-height: 1.2;
+    }
 }
 
 body.home .hero-name span {
@@ -691,23 +701,4 @@ strong {
     font-weight: 700;
     color: #1a1a1a;
     font-family: 'Butler', serif;
-}
-
-/* Alleen op mobiel de naam op twee regels */
-@media (max-width: 600px) {
-    body.home .hero-name {
-        font-size: 3rem; /* iets kleiner zodat het past */
-        line-height: 1.2;
-    }
-
-    body.home .hero-name br {
-        display: block; /* toon de regelbreuk op mobiel */
-    }
-}
-
-/* Op grotere schermen: naam blijft op één regel */
-@media (min-width: 601px) {
-    body.home .hero-name br {
-        display: none; /* verberg de regelbreuk */
-    }
 }

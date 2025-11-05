@@ -350,6 +350,8 @@ body.home .hero-name {
     font-weight: 700;
     letter-spacing: 0.1em;
     margin: 0;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 body.home .hero-name span {

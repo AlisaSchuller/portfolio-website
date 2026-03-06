@@ -434,7 +434,8 @@ body.home .intro,
 body.home .featured-work,
 body.home .quote,
 body.home .contact-teaser {
-    max-width: 900px;
+    width: 100%;
+    max-width: 800px;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 12px;
     margin: 3rem auto;

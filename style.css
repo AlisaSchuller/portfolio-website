@@ -562,10 +562,16 @@ body.home .quote blockquote {
 /* =========================== Projectpagina: galerij met foto's =========================== */
 .project-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
+}
+
+.small-photos {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-gallery img {

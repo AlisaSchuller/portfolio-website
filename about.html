@@ -51,11 +51,15 @@
         <div class="carousel">
             <button class="arrow left">&#10094;</button>
             <div class="carousel-track">
-                <img src="img/instagramfoto1_Alisa_schuller_Logo_design_presentation_indesign.JPG" alt="">
-                <img src="img/instagramfoto2.JPG" alt="">
-                <img src="img/IMG_6553.HEIC" alt="">
-                <img src="img/instagramfoto4_ORG_DSC03151.JPG" alt="">
-                <img src="img/instagramfoto3_MD_Challange1_Alisa-Schuller_foto1.jpg" alt="">
+                <img src="img/IMG_9315.JPG" alt="">
+                <img src="img/SMC05220.jpg" alt="">
+                <img src="img/IMG_6700.jpg" alt="">
+                <img src="img/IMG_1514.JPG" alt="">
+                <img src="img/IMG_6553.jpg" alt="">
+                <img src="img/IMG_5986.JPG" alt="">
+                <img src="img/IMG_0875.jpg" alt="">
+                <img src="img/IMG_5678.jpg" alt="">
+                <img src="img/IMG_6393.jpg" alt="">
             </div>
             <button class="arrow right">&#10095;</button>
         </div>
@@ -70,13 +74,14 @@
         const slides = Array.from(track.children);
         const leftButton = document.querySelector('.arrow.left');
         const rightButton = document.querySelector('.arrow.right');
-        let currentIndex = 2; // start in het midden
+        let currentIndex = Math.floor(slides.length / 2);
 
         function updateCarousel() {
             slides.forEach((img, index) => {
                 img.classList.toggle('active', index === currentIndex);
             });
-            const offset = (currentIndex - 2) * -220; // 220 = breedte + gap
+            const visibleCenter = Math.floor(slides.length / 2);
+            const offset = (currentIndex - visibleCenter) * -220;
             track.style.transform = `translateX(${offset}px)`;
         }
 

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrediëntenlijsten | NOT AS CLEAR AS IT SEEMS</title>
+    <link rel="stylesheet" href="campaign.css">
+</head>
+
+<body class="project">
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>INGREDIËNTENLIJSTEN</h2>
+
+        <p>
+            Cosmeticaproducten bevatten vaak tientallen ingrediënten.
+            Sommige ingrediënten worden prominent op de verpakking genoemd,
+            terwijl andere minder bekend zijn bij consumenten.
+        </p>
+
+        <p>
+            Klik op een product om een overzicht te bekijken van alle positieve en negatieve ingrediënten en de mogelijke gevolgen.
+        </p>
+
+<div class="ingredients-gallery">
+
+    <div class="product-card">
+        <img src="img/prd-front-3834258-2-1020x1020.avif"
+             data-info="img/Catrice_liquid_foundation_ingredienten.jpg"
+             alt="Product 1">
+        <span class="img-credit">bron: Catrice via Kruidvat.nl</span>
+    </div>
+
+    <div class="product-card">
+        <img src="img/prd-front-5783258-1-600x600.avif"
+             data-info="img/Lorealparis_primer_ingredienten.jpg"
+             alt="Product 2">
+        <span class="img-credit">bron: L’Oréal Paris via Kruidvat.nl</span>
+    </div>
+
+    <div class="product-card">
+        <img src="img/prd-front-5230709-1-600x600-1.avif"
+             data-info="img/Catrice_True_Skin_concealer.jpg"
+             alt="Product 3">
+        <span class="img-credit">bron: Catrice via Kruidvat.nl</span>
+    </div>
+
+    <div class="product-card">
+        <img src="img/prd-front-2402520-1-1020x1020.avif"
+             data-info="img/mabeline_antiage_concealer_ingredienten.jpg"
+             alt="Product 4">
+        <span class="img-credit">bron: Maybelline New York via Kruidvat.nl</span>
+    </div>
+
+    <div class="product-card">
+        <img src="img/prd-front-4167073-1-600x600.avif"
+             data-info="img/Loreal_paris_truematch_ingredienten.jpg"
+             alt="Product 5">
+        <span class="img-credit">bron: L'Oréal Paris via Kruidvat.nl</span>
+    </div>
+
+    <div class="product-card">
+        <img src="img/prd-front-5783559-1-600x600.avif"
+             data-info="img/Maybelline_powder_matt_ingredienten.jpg"
+             alt="Product 6">
+        <span class="img-credit">bron: Maybelline New York via Kruidvat.nl</span>
+    </div>
+
+</div>
+
+    </section>
+
+    <div class="back-button-container">
+        <a href="NOTASCLEARASITSEEMS.html" class="back-button">
+            ← Terug naar het project
+        </a>
+    </div>
+
+    <footer>
+        © 2025 Alisa Schuller – “I am only passionately curious.”
+    </footer>
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Ingrediëntenoverzicht">
+    </div>
+
+    <script>
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".ingredients-gallery img").forEach(img => {
+
+    img.addEventListener("click", () => {
+
+
+        lightboxImg.src = img.dataset.info;
+        lightbox.style.display = "flex";
+
+    });
+
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+</script>
+
+</body>
+
+</html>

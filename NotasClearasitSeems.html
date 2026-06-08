@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOT AS CLEAR AS IT SEEMS</title>
+    <link rel="stylesheet" href="campaign.css">
+</head>
+
+<body class="project">
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/ACF_logo_donkergroen.svg" alt="Alisa Schuller Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mij</a>
+            <a href="work.html">Mijn werk</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>NOT AS CLEAR AS IT SEEMS</h2>
+        <p>
+            Cosmeticaproducten worden dagelijks gebruikt en gepresenteerd als transparant en verzorgend. De ingrediënten met de positiefste invloed op de huid worden vaak groot op de verpakking geplaatst, om te laten zien dat er “goede” ingrediënten in het product zitten. Dit is echter maar een klein deel van wat er daadwerkelijk in zo’n flesje zit. Veel andere ingrediënten kunnen de huid uitdrogen, puisten veroorzaken of zelfs de hormoonbalans verstoren. Hoewel al deze ingrediënten op de achterkant van de verpakking vermeld staan, begrijpen veel consumenten nauwelijks wat ze zijn of wat ze doen.</p>
+
+<p>Dit project verbeeldt de spanning tussen transparantie, vertrouwen en begrijpelijkheid binnen de cosmeticawereld. Het is geen verwijt dat mensen geen make-up zouden moeten dragen, maar een poging om bewustwording te creëren. Ik hoop mensen aan te zetten om meer onderzoek te doen naar wat zij dagelijks smeren op het grootste orgaan dat we bezitten: de huid.</p>
+    
+<div class="quote-section">
+    <img src="img/ORG_DSC04720.jpg" alt="Detail van installatie">
+
+    <blockquote class="project-quote">
+        “Weet jij eigenlijk wel <br> wat er in jouw make-up zit?”
+    </blockquote>
+</div>
+
+<p>Voor deze installatie is gekozen voor glas, een materiaal dat normaal gesproken transparantie en helderheid symboliseert. Door dat het glas gebroken is moet je beter je best doen om te kijken wat er nou echt in zit. Een perfect symbool voor hoe de cosmetica-industrie er nu uitziet. </p>
+
+<p>Op deze manier vormt het materiaal een symbolische vertaling van de manier waarop transparantie binnen de cosmetica-industrie vaak wordt ervaren: zichtbaar, maar niet altijd makkelijk te begrijpen.</p>
+        <div class="project-gallery">
+             <img src="img/ORG_DSC04707.jpg" alt="Poster detail 1">
+            <img src="img/ORG_DSC04689 2.jpg" alt="Poster detail 2">
+            <img src="img/ORG_DSC04681.jpg" alt="Poster detail 3">
+        </div>
+    </section>
+<div class="back-button-container">
+    <a href="index.html" class="back-button">← Meer weten over de ontwerper?</a>
+</div>
+    <footer>
+        © 2025 Alisa Schuller – “I am only passionately curious.”
+    </footer>
+    <div class="lightbox" id="lightbox">
+    <img src="" alt="Vergrote foto">
+</div>
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+
+document.querySelectorAll(".project-gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+
+</html>

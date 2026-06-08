@@ -713,3 +713,67 @@ strong {
     color: #1a1a1a;
     font-family: 'Butler', serif;
 }
+
+.next-project {
+    text-align: right;
+}
+
+/* =========================== Nieuw Project sectie =========================== */
+
+body.home .new-project {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+body.home .new-project-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+body.home .new-project-text {
+    flex: 1;
+    text-align: left;
+}
+
+body.home .new-project-text h2 {
+    text-align: left;
+}
+
+body.home .new-project-text p {
+    margin-bottom: 1.5rem;
+}
+
+body.home .new-project-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+body.home .new-project-image img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Mobiel */
+
+@media (max-width: 700px) {
+    body.home .new-project-content {
+        flex-direction: column;
+    }
+
+    body.home .new-project-text h2 {
+        text-align: center;
+    }
+
+    body.home .new-project-text {
+        text-align: center;
+    }
+}
